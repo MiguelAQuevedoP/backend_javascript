@@ -11,7 +11,7 @@ function divide(x, y) {
     return x / y;
 }
 
-module.exports = {
+export default {
     add,
     subtract,
     multiply,
