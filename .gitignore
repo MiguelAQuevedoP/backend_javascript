@@ -1,4 +1,3 @@
 node.code-workspace
 node_modules
-node_webside/node_modules
-CRUD/node_modules
+.DS_Store
