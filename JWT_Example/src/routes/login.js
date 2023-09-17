@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 
 const getUser = async (username) => {
-  return { userId: 123, password: "123456", username };
+  return { userId: 123, password: "admin", username };
 };
 
 module.exports = (app) =>
@@ -21,8 +21,7 @@ module.exports = (app) =>
     const token = jwt.sign(user, 'secret', { expiresIn: "1h" });
 
     res.cookie("token", token);
-    
-    console.log('tokenCookie: ', req.cookie)
+    console.log('tokenCookie: ', req.cookies.token)
 
     return res.redirect("/welcome");
   });
