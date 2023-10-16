@@ -28,5 +28,5 @@ app.use("/", loginRoute);
 app.use("/welcome", addRoute);
 
 app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}!`);
+  console.log(`Example app listening on port at http://localhost:${PORT}!`);
 });

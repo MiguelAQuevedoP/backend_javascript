@@ -19,7 +19,7 @@ routeLogin.post("/login", async (req, res) => {
     expiresIn: 1000 * 60,
   });
   res.cookie("token", token);
-  console.log("token: ", req.cookie);
+  console.log("token-cookie: ", req.cookies.token);
   return res.redirect("/welcome");
 });
 
